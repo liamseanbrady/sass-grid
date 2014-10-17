@@ -1,0 +1,31 @@
+/***************************************************************
+  Placeholders
+****************************************************************/
+
+// Nav
+
+%nav-item-horz {
+  @include mq(medium) {
+    display: inline-block;
+    margin: 0;
+    margin-left: em(-4px);
+  }
+}
+
+%nav-item-link {
+  font-size: em(16px);
+  text-align: center;
+  font-weight: $font-weight--medium;
+  display: block;
+  padding: em(25px, 20px);
+  @include mq(small) {
+    padding-top: em(14px, 18px);
+    padding-bottom: em(14px, 18px);
+  }
+}
+
+%nav-item-on {
+  color: $white;
+  border-color: $color-accent;
+  background: rgba(255, 255, 255, 0.1);
+}

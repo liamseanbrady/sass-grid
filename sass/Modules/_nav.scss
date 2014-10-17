@@ -1,0 +1,28 @@
+/***************************************************************
+  Nav
+****************************************************************/
+
+.nav {
+  @include mq(medium) {
+    float: right;
+    margin-right: 8%;
+  }
+
+  @include e(item) {
+    @extend %nav-item-horz;
+    a {
+      @extend %nav-item-link;
+      color: $white;
+      &:hover {
+        @extend %nav-item-on;
+      }
+    }
+    @include m(current) {
+      @extend %nav-item-horz;
+      a {
+        @extend %nav-item-link;
+        @extend %nav-item-on;
+      }
+    }
+  }
+}

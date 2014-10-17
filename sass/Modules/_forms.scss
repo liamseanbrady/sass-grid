@@ -1,0 +1,33 @@
+/***************************************************************
+  Forms
+****************************************************************/
+
+.form {
+  @include e(label) {
+    @include m(hidden) {
+      @extend .srt;
+    }
+  }
+
+  display: block;
+  margin-bottom: em(10px);
+
+  @include e(input) {
+    font-size: em(18px);
+    margin-bottom: em(20px, 18px);
+    border-radius: $br--default;
+    border: em(2px) solid darken($white, 10%);
+    background: $white;
+    color: $black;
+    font-weight: $font-weight--medium;
+
+    &:focus {
+      border-color: $color-primary;
+    }
+  }
+
+  // @include e(btn) {
+  //   @extend %btn;
+  //   background: $color-primary;
+  // }
+}

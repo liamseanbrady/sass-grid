@@ -1,0 +1,13 @@
+/***************************************************************
+  Navbar
+****************************************************************/
+
+.navbar {
+  @extend %clearfix;
+  float: left;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: em(35px);
+  width: 100%;
+  background: $color-primary;
+}

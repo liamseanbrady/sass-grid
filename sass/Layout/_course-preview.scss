@@ -1,0 +1,27 @@
+/***************************************************************
+  Course Preview Boxes
+****************************************************************/
+
+.course-preview {
+
+  margin-top: em(50px);
+
+  @include m(image) {
+    margin: 0;
+    padding: 0;
+  }
+  @include m(headline) {
+    margin: 0;
+    padding: em(30px) em(10px);
+    text-align: center;
+    background: lighten(grey, 41%);
+  }
+  @include m(desc) {
+    padding: em(10px);
+  }
+
+  @include m(info) {
+    padding-top: em(5px);
+    border-top: 2px solid grey;
+  }
+}
