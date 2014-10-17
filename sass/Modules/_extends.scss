@@ -13,14 +13,14 @@
 }
 
 %nav-item-link {
-  font-size: em(16px);
+  font-size: em(14px);
   text-align: center;
   font-weight: $font-weight--medium;
   display: block;
   padding: em(25px, 20px);
   @include mq(small) {
-    padding-top: em(14px, 18px);
-    padding-bottom: em(14px, 18px);
+    padding-top: em(18px, 14px);
+    padding-bottom: em(18px, 14px);
   }
 }
 

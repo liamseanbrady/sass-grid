@@ -464,9 +464,7 @@ textarea:focus {
 @media (min-width: 769px) {
   [class^="grid__col--"] {
     float: left;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px; }
+    min-height: 1px; }
     [class^="grid__col--"] + [class^="grid__col--"] {
       margin-left: 2%; }
     [class^="grid__col--"]:last-of-type {
@@ -493,20 +491,34 @@ textarea:focus {
   Course Preview Boxes
 ****************************************************************/
 .course-preview {
-  margin-top: 3.125em; }
+  padding: 0;
+  margin-top: 3.125em;
+  box-shadow: 0px 0px 4px 1px #888888; }
   .course-preview--image {
     margin: 0;
     padding: 0; }
   .course-preview--headline {
     margin: 0;
+    margin-top: -0.25em;
     padding: 1.875em 0.625em;
     text-align: center;
-    background: #e9e9e9; }
+    background: #EEE; }
   .course-preview--desc {
     padding: 0.625em; }
   .course-preview--info {
     padding-top: 0.3125em;
-    border-top: 2px solid grey; }
+    padding-left: 0.625em;
+    padding-right: 0.625em;
+    border-top: 2px solid #EEE; }
+    @media (min-width: 1px) and (max-width: 768px) {
+      .course-preview--info {
+        text-align: center; } }
+  .course-preview--author {
+    font-weight: 900;
+    color: #0b0b0b; }
+  .course-preview--price {
+    font-weight: 900;
+    color: #31B187; }
 
 /***************************************************************
   Placeholders
@@ -518,15 +530,15 @@ textarea:focus {
     margin-left: -0.25em; } }
 
 .nav__item a, .nav__item--current a {
-  font-size: 1em;
+  font-size: 0.875em;
   text-align: center;
   font-weight: 700;
   display: block;
   padding: 1.25em; }
   @media (min-width: 1px) and (max-width: 768px) {
     .nav__item a, .nav__item--current a {
-      padding-top: 0.77778em;
-      padding-bottom: 0.77778em; } }
+      padding-top: 1.28571em;
+      padding-bottom: 1.28571em; } }
 
 .nav__item a:hover, .nav__item--current a {
   color: #fff;
@@ -577,9 +589,19 @@ textarea:focus {
 .img--full {
   width: 100%;
   height: auto;
-  background: grey; }
+  background: grey;
+  margin-bottom: 0px;
+  display: block; }
   @media (min-width: 769px) {
     .img--full {
+      max-width: 100%; } }
+
+.img--avatar {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px; }
+  @media (min-width: 769px) {
+    .img--avatar {
       max-width: 100%; } }
 
 /*# sourceMappingURL=application.css.map */

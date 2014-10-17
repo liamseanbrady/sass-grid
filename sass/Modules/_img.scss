@@ -6,6 +6,17 @@
   width: 100%;
   height: auto;
   background: grey;
+  margin-bottom: 0px;
+  display: block;
+  @include mq("medium") {
+    max-width: 100%;
+  }
+}
+
+.img--avatar {
+  border-radius: $br--round;
+  height: 40px;
+  width: 40px;
   @include mq("medium") {
     max-width: 100%;
   }
