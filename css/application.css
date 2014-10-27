@@ -506,7 +506,7 @@ textarea:focus {
   .course-preview--desc {
     padding: 0.625em; }
   .course-preview--info {
-    padding-top: 0.3125em;
+    padding-top: 0.625em;
     padding-left: 0.625em;
     padding-right: 0.625em;
     border-top: 2px solid #EEE; }
@@ -603,5 +603,19 @@ textarea:focus {
   @media (min-width: 769px) {
     .img--avatar {
       max-width: 100%; } }
+
+/***************************************************************
+  Footer
+****************************************************************/
+.footer {
+  background: #31353F;
+  margin-top: 8.75em;
+  padding-top: 1.25em;
+  padding-bottom: 2.5em;
+  width: 100%; }
+  .footer__section {
+    color: #fff;
+    padding-left: 1.875em;
+    padding-right: 1.875em; }
 
 /*# sourceMappingURL=application.css.map */
